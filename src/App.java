@@ -22,6 +22,30 @@ public class App {
             "\n" +
             "\n" 
         );
+    }
 
+    public static void gameLoop (PetNeeds newPet) {
+        int userSelection; 
+        Scanner input2 = new Scanner(System.in);
+
+        while (userSelection != 0) {
+            System.out.println(
+                "What would you like to do?" +
+                "1. Feed Pet" +
+                "2. Water Pet" +
+                "3. Play With Pet" +
+                "4. Take Pet to Bathroom" +
+                "5. Put Pet to Bed" +
+                "6. Clean Pet" +
+                "0. Exit");
+            tick();
+            userSelection = input2.nextInt();
+            switch (userSelection) {
+                case 1: manageHunger();
+                        break;
+                case 2: drinkPet();
+            }
+        }
+        
     }
 }

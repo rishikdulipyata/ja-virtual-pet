@@ -16,6 +16,7 @@ public class PetNeeds {
         exhaustion = 1;
         dirtiness = 1;
     }
+    
     // Simulate the passage of time by degrading the pet's stats
     public void tick() {
         petName += 1;
