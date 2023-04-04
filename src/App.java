@@ -38,7 +38,7 @@ public class App {
                 "5. Put Pet to Bed" +
                 "6. Clean Pet" +
                 "0. Exit");
-            tick();
+            tick();//hi
             userSelection = input2.nextInt();
             switch (userSelection) {
                 case 1: manageHunger();
